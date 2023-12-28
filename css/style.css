@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+
+:root {
+    --font: 'Inter', sans-serif;
+    --black: #000;
+    --white: #ffffffe8;
+}
+
+::selection {
+    background-color: var(--black);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
+body {
+    padding: 0 2rem;
+    overflow: hidden;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1b9b8683, var(--black));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0c4239d3, var(--black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.img-box {
+    width: 600px;
+    display: flex;
+    margin-right: 11rem;
+}
+
+.img-box img {
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+.txt {
+    border-radius: 10px;
+    padding: 1rem ;
+    width: 600px;
+    background-color: #30415323;
+    backdrop-filter: blur(150px);
+}
+
+
+.title {
+    font: var(--font);
+    color: var(--white);
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.span-title {
+    color: #27DEBF;
+    font-weight: bold;
+}
+
+
+.formulario {
+    padding: 1rem 0;
+}
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1.5rem 0;
+    width: 73%;
+    color: var(--white);
+}
+
+
+
+
+.sbt,
+.input-number-altura,
+.input-number-peso {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.sbt {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: var(--font);
+    background: linear-gradient(to right,#27DEBF, #1B9B86);
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 20px 70px -0px;
+}
+
+
+
+
+.resultado {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.resultado p {
+    color: var(--white);
+}
+
+
+.resultado img {
+    color: #1B9B86;
+    width: 21px;
+}
+
+
+.flex-result {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+
+.bmi-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-right: 15px;
+}
+
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    width: 85%;
+    margin: auto;
+}
+
+
+
+
+
+
+#value {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+.resultado span {
+    font-size: 15px;
+}
+
+.seu-imc {
+    color: var(--white);
+}
+
+
+.description {
+    color: var(--white);
+}
+
+
+
+.p-result {
+    font-size: 15px;
+}
+
+
+.normal {
+    color: #1B9B86;
+}
+
+.attention {
+    color: #dc2626;
+}
+
+
+
+
+
+@media screen and  (max-width: 1277px) {
+
+    .img-box {
+        width: 500px;
+        margin-right: 5rem;
+    }
+
+
+    .txt {
+        width: 500px;
+    }
+
+}
+
+
+
+@media screen and  (max-width: 1024px) {
+
+    .img-box {
+        width: 400px;
+        margin-right: 5rem;
+    }
+
+
+    .txt {
+        width: 70%;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    .img-box {
+        display: none
+    }
+
+}
+
+
+
+@media screen and  (max-width: 874px) {
+
+
+    .txt {
+        width: 80%;
+    }
+
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    div.description {
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media screen and  (max-width: 735px) {
+
+
+
+
+    .txt {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    div.description {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and  (max-width: 480px) {
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+
+    label,
+    .sbt {
+        font-size: 14px;
+    }
+
+    .txt {
+        padding: 1rem 1.8rem;
+        width: 100%;
+    }
+
+    div.description {
+        font-size: 14px;
+    }
+
+
+    #value {
+        font-size: 1.4rem;
+    }
+
+
+    .resultado img {
+        width: 19px;
+    }
+
+}
